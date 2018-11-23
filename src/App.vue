@@ -3,7 +3,7 @@
         <app-header></app-header>
                 <hr>
              <div class="row">
-                <app-service></app-service>
+                <service></service>
                 <app-details></app-details>
             </div>
                 <hr>
@@ -12,17 +12,17 @@
 </template>
 
 <script>
-    import Header from './Header.vue';
-    import Footer from './Footer.vue';
-    import Service from './Service.vue';
-    import Details from './Details.vue';
+    import Header from './components/Shared/Header.vue';
+    import Footer from './components/Shared/Footer.vue';
+    import Service from './components/Server/Service.vue';
+    import Details from './components/Server/Details.vue';
 
     export default {
         components: {
-            'app-header': Header,
+            'appHeader': Header,
+             Service,
+            'app-details': Details,
             'app-footer': Footer,
-            'app-service': Service,
-            'app-details': Details
         }
     }
 </script>
